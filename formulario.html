@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="cadastroForm" action="" method="POST">
+    <div>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="usuario_nome" />
+    </div>
+
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="usuario_email" />
+    </div>
+
+    <div>
+        <label for="cpf">CPF:</label>
+        <input type="cpf" id="cpf" name="usuario_cpf" />
+    </div>
+
+<div>
+    <label for="pagamento">Forma de Pagamento:</label>
+    <select id="pagamento" name="pagamento" required>
+    <option value="dinheiro">Dinheiro em espécie</option>
+      <option value="pix">Pix</option>
+      <option value="cartao">Cartão de Crédito e/ou Débito</option>
+      <option value="boleto">Boleto Bancário</option>
+      <option value="transferencia">Transferência Bancária</option>
+    </select>
+</div>
+
+    <div class="button">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
+</body>
+</html>
